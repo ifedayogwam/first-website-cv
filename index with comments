@@ -1,0 +1,118 @@
+<!-- This is the code of my first website -->
+<!-- when you see '*' at the beginning or end of a comment it means don't take it word for word, do extra research and testing to confirm.-->
+<!-- The comments you see in this code are to just give you a better understanding of what you see in the website, hope you like it. -->
+<!-- This is the shortcut used to start your html boiler template -->
+<!DOCTYPE html>
+<!-- This is the starting html tag with its attributes -->
+<html lang="en" dir="ltr">
+<!-- This is the architecture of the html tag it has the head and body  -->
+
+<head>
+  <!-- When you see things like meta, img, li, ul, hr, they are elements and elements have attributes in the bracket. These can be found on mozilla html mdn -->
+  <!-- * meta is also the encoder for your websites they make sure it is transferrable from language to language -->
+  <meta charset="utf-8">
+  <!-- This generates the title you see in your tab on the web browser -->
+  <title> Ifedayo's website </title>
+</head>
+<!-- body is what will be in your blank page of your website -->
+
+<body>
+  <!-- img src is image source and it generates the picture you can use on html -->
+  <img src="ifedayo_1.png" alt="Ifedayo's profile picture">
+  <!-- h1- This is the header font maker, h1 is the largest font you can use for headers-->
+  <<h1> IFEDAYO GWAM </h1>
+    <!-- p is is the paragraph tool and it creates space for you to write things -->
+    <!-- em is a font tool used to make words you write italicised but with more emphasis that is noticeable to the user -->
+    <!-- strong is the font tool used to bolden letters with more emphasis to the user, you can use 'b' but it is better practice to use em -->
+    <p> <em> Beginner coder and currently <strong>enjoying</strong> it </em> </p>
+    <!-- a href is what you use to embed links in your words, so you write a word that is already boldened or italicized and then you make it clickable and that then allows you to go to other links -->
+    <p> My name is Ifedayo, I play <strong><a href="https://www.ea.com/games/fifa/fifa-21">fifa 21</a></strong> and rage a lot but hopefully learning programming can help me reduce my fifa playing </p>
+    <!-- hr is the header rule and it allows you to draw lines and it has attributes that allow you make changes to the lines -->
+    <hr>
+    <!-- h3 is the header font size maker, it is a smaller size compared to h1 and h2 and it stops getting smaller at h6 -->
+    <h3> EDUCATION </h3>
+    <!-- ul is the unordered list and it gives you list that don't have numbers and are in bullet points -->
+    <ul>
+      <!-- li is the list item and it allows you put the things you want in lists -->
+      <li>
+        <p> Rainbow College</p>
+      </li>
+      <li>
+        <p><strong><a href="https://www.sheridancollege.ca/"> Sheridan College </a></strong></p>
+      </li>
+    </ul>
+    <h3> WORK EXPERIENCE</h3>
+    <!-- table is the element that allows you to create tables for things you want to list and make it look a bit more organized -->
+    <table border="1">
+      <!-- thead which is table head is the element that allows you to decide what you will use as your heading and the more words you put the more rows you create, it is also usually boldened -->
+      <thead>
+        <!-- th is the element you use to insert the things you want in your table head -->
+        <th>Dates</th>
+        <th>Jobs</th>
+      </thead>
+      <!-- tbody is the part of the table that is being listed -->
+      <tbody>
+        <!-- tr is the table row and it allows you to put things in a row which would be like you see in your website when you open it   -->
+        <tr>
+          <!-- td is the table data and it is how you put things side by side in your table like shown in the website -->
+          <td> 2017 - 2018 </td>
+          <td> Buggy Boy </td>
+        </tr>
+        <tr>
+          <td> 2018 - Present </td>
+          <td> Cashier </td>
+        </tr>
+      </tbody>
+      <tfoot>
+
+      </tfoot>
+
+    </table>
+
+  </table>
+  <hr>
+  <!-- This section shows why you should not use html to design your website  -->
+  <!-- When using html to do things other than structure you tend to use complex nested tags, meaning a tag within a tag and that kind of work gets complex fast -->
+  <!-- This is an explanation of how the skills section in my website is done -->
+  <h3> SKILLS </h3>
+  <!-- The table tag with cellspacing is a function to ensure all the things nested in follow the instruction of having a spacing between cellls or you can call them rows, even though the lines are not drawn  -->
+  <!-- For an easy approach to this probkem you make the skills and stars seperately first and make sure you can see them all in a straight line  -->
+  <!-- The end of the generic table section section with running and playing football or the one with solving math and logical analysis should be done first (skills and stars)  -->
+  <!-- You then create the master tr which starts after cellspacing stuff(master table tag) and ends before the end of the master table tag -->
+  <!-- This contains 2 td's as you can see there are two different sections with skills and stars -->
+  <!-- Your seperately made skills and stars sections are then nested in the td's and that is how you achieve what you see on my skills section -->
+      <table cellspacing="10">
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Running</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Playing football</td>
+                <td>⭐⭐</td>
+              </tr>
+              </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>Solving math</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Logical Analysis</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    <hr>
+    <!-- These are obviously seperately made links that can be clicked to take you to another page -->
+    <a href="hobbies.html">MY HOBBIES </a>
+    <a href="contact.html">CONTACT ME</a>
+</body>
+
+</html>
